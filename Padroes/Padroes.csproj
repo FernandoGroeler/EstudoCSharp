@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{08DD64F0-28B4-4E62-B939-EEFD81F0ACAB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Padroes</RootNamespace>
+    <AssemblyName>Padroes</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patterns\Behavioral\ChainOfResponsability\ConsoleLogger.cs" />
+    <Compile Include="Patterns\Behavioral\ChainOfResponsability\EmailLogger.cs" />
+    <Compile Include="Patterns\Behavioral\ChainOfResponsability\ErrorLogger.cs" />
+    <Compile Include="Patterns\Behavioral\ChainOfResponsability\Logger.cs" />
+    <Compile Include="Patterns\Behavioral\ChainOfResponsability\TestChainOfResponsability.cs" />
+    <Compile Include="Patterns\Behavioral\Command\ComandoAbrir.cs" />
+    <Compile Include="Patterns\Behavioral\Command\ComandoFechar.cs" />
+    <Compile Include="Patterns\Behavioral\Command\ComandoImprimir.cs" />
+    <Compile Include="Patterns\Behavioral\Command\IComando.cs" />
+    <Compile Include="Patterns\Behavioral\Command\TestCommand.cs" />
+    <Compile Include="Patterns\Behavioral\Command\TestThread\TestCommandThread.cs" />
+    <Compile Include="Patterns\Behavioral\Interpreter\Adicao.cs" />
+    <Compile Include="Patterns\Behavioral\Interpreter\Avaliador.cs" />
+    <Compile Include="Patterns\Behavioral\Interpreter\IExpressao.cs" />
+    <Compile Include="Patterns\Behavioral\Interpreter\Numero.cs" />
+    <Compile Include="Patterns\Behavioral\Interpreter\Subtracao.cs" />
+    <Compile Include="Patterns\Behavioral\Interpreter\TestePilha.cs" />
+    <Compile Include="Patterns\Behavioral\Interpreter\TestInterpreter.cs" />
+    <Compile Include="Patterns\Behavioral\Interpreter\Variavel.cs" />
+    <Compile Include="Patterns\Behavioral\Iterator\IIterator.cs" />
+    <Compile Include="Patterns\Behavioral\Iterator\ListaDeNumeros.cs" />
+    <Compile Include="Patterns\Behavioral\Iterator\TestIterator.cs" />
+    <Compile Include="Patterns\Behavioral\Mediator\Cliente.cs" />
+    <Compile Include="Patterns\Behavioral\Mediator\ClienteMovel.cs" />
+    <Compile Include="Patterns\Behavioral\Mediator\ClienteRemoto.cs" />
+    <Compile Include="Patterns\Behavioral\Mediator\ClienteLocal.cs" />
+    <Compile Include="Patterns\Behavioral\Mediator\IMediator.cs" />
+    <Compile Include="Patterns\Behavioral\Mediator\Servidor.cs" />
+    <Compile Include="Patterns\Behavioral\Mediator\TestMediator.cs" />
+    <Compile Include="Patterns\Behavioral\Memento\Cliente.cs" />
+    <Compile Include="Patterns\Behavioral\Memento\Memento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patterns\Behavioral\Memento\Memento.Designer.cs">
+      <DependentUpon>Memento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patterns\Behavioral\Memento\MementoAdapter.cs" />
+    <Compile Include="Patterns\Behavioral\Observer\LeitorDeComandos.cs" />
+    <Compile Include="Patterns\Behavioral\Observer\ObserverGravarMensagem.cs" />
+    <Compile Include="Patterns\Behavioral\Observer\ObserverMostrarMensagem.cs" />
+    <Compile Include="Patterns\Behavioral\Observer\TestObserver.cs" />
+    <Compile Include="Patterns\Behavioral\State\EnumEstado.cs" />
+    <Compile Include="Patterns\Behavioral\State\NotaFiscal.cs" />
+    <Compile Include="Patterns\Behavioral\State\TestState.cs" />
+    <Compile Include="Patterns\Behavioral\Strategy\Aluno.cs" />
+    <Compile Include="Patterns\Behavioral\Strategy\Classificador.cs" />
+    <Compile Include="Patterns\Behavioral\Strategy\IEstrategia.cs" />
+    <Compile Include="Patterns\Behavioral\Strategy\MelhorNota.cs" />
+    <Compile Include="Patterns\Behavioral\Strategy\MelhorNotaMenosFalta.cs" />
+    <Compile Include="Patterns\Behavioral\Strategy\MenosFalta.cs" />
+    <Compile Include="Patterns\Behavioral\Strategy\TestStrategy.cs" />
+    <Compile Include="Patterns\Behavioral\TemplateMethod\BaseReport.cs" />
+    <Compile Include="Patterns\Behavioral\TemplateMethod\ListaDeClientes.cs" />
+    <Compile Include="Patterns\Behavioral\TemplateMethod\RelatorioVendas.cs" />
+    <Compile Include="Patterns\Behavioral\TemplateMethod\TestTemplateMethod.cs" />
+    <Compile Include="Patterns\Behavioral\Visitor\BibliotecaDeMusica.cs" />
+    <Compile Include="Patterns\Behavioral\Visitor\IVisitorMusica.cs" />
+    <Compile Include="Patterns\Behavioral\Visitor\ListExtensions.cs" />
+    <Compile Include="Patterns\Behavioral\Visitor\Musica.cs" />
+    <Compile Include="Patterns\Behavioral\Visitor\SelecionadorFesta.cs" />
+    <Compile Include="Patterns\Behavioral\Visitor\SelecionadorRock.cs" />
+    <Compile Include="Patterns\Behavioral\Visitor\TestVisitor.cs" />
+    <Compile Include="Patterns\Behavioral\Visitor\TipoMusica.cs" />
+    <Compile Include="Patterns\Behavioral\Visitor\Tocador.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patterns\Behavioral\Memento\Memento.resx">
+      <DependentUpon>Memento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

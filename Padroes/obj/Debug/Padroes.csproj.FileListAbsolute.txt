@@ -1,0 +1,11 @@
+D:\workspace\laboratorio\Estudo\Padroes\bin\Debug\Padroes.exe.config
+D:\workspace\laboratorio\Estudo\Padroes\bin\Debug\Padroes.exe
+D:\workspace\laboratorio\Estudo\Padroes\bin\Debug\Padroes.pdb
+D:\workspace\laboratorio\Estudo\Padroes\obj\Debug\Padroes.csprojAssemblyReference.cache
+D:\workspace\laboratorio\Estudo\Padroes\obj\Debug\Padroes.Form1.resources
+D:\workspace\laboratorio\Estudo\Padroes\obj\Debug\Padroes.Properties.Resources.resources
+D:\workspace\laboratorio\Estudo\Padroes\obj\Debug\Padroes.csproj.GenerateResource.cache
+D:\workspace\laboratorio\Estudo\Padroes\obj\Debug\Padroes.csproj.CoreCompileInputs.cache
+D:\workspace\laboratorio\Estudo\Padroes\obj\Debug\Padroes.exe
+D:\workspace\laboratorio\Estudo\Padroes\obj\Debug\Padroes.pdb
+D:\workspace\laboratorio\Estudo\Padroes\obj\Debug\Padroes.Patterns.Behavioral.Memento.Memento.resources
