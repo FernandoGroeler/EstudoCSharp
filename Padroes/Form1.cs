@@ -10,6 +10,9 @@ using Padroes.Patterns.Behavioral.State;
 using Padroes.Patterns.Behavioral.Strategy;
 using Padroes.Patterns.Behavioral.TemplateMethod;
 using Padroes.Patterns.Behavioral.Visitor;
+using Padroes.Patterns.Creational.AbstractFactory;
+using Padroes.Patterns.Creational.Builder;
+using Padroes.Patterns.Creational.FactoryMethod;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -93,6 +96,21 @@ namespace Padroes
         private void button13_Click(object sender, EventArgs e)
         {
             TestVisitor.Testar();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            TestAbstractFactory.Testar();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            TestBuilder.Testar();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            TestFactoryMethod.Testar();
         }
     }
 }
