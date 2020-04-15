@@ -137,6 +137,24 @@
     <Compile Include="Patterns\Creational\FactoryMethod\NotaPR.cs" />
     <Compile Include="Patterns\Creational\FactoryMethod\NotaSP.cs" />
     <Compile Include="Patterns\Creational\FactoryMethod\TestFactoryMethod.cs" />
+    <Compile Include="Patterns\Creational\Prototype\Configuracao.cs" />
+    <Compile Include="Patterns\Creational\Prototype\TestPrototype.cs" />
+    <Compile Include="Patterns\Creational\Singleton\MeuSingleton.cs" />
+    <Compile Include="Patterns\Creational\Singleton\TestSingleton.cs" />
+    <Compile Include="Patterns\NotGof\FluentInterface\Carro.cs" />
+    <Compile Include="Patterns\NotGof\FluentInterface\ConstrutorCarro.cs" />
+    <Compile Include="Patterns\NotGof\FluentInterface\TestFluentInterface.cs" />
+    <Compile Include="Patterns\Structural\Adapter\Impressora.cs" />
+    <Compile Include="Patterns\Structural\Adapter\JanelaOutput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patterns\Structural\Adapter\JanelaOutput.Designer.cs">
+      <DependentUpon>JanelaOutput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patterns\Structural\Adapter\MeuMouseListener.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Patterns\Structural\Adapter\NovaImpressora.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -144,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Patterns\Behavioral\Memento\Memento.resx">
       <DependentUpon>Memento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patterns\Structural\Adapter\JanelaOutput.resx">
+      <DependentUpon>JanelaOutput.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

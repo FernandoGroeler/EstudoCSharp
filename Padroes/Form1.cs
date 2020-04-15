@@ -13,6 +13,9 @@ using Padroes.Patterns.Behavioral.Visitor;
 using Padroes.Patterns.Creational.AbstractFactory;
 using Padroes.Patterns.Creational.Builder;
 using Padroes.Patterns.Creational.FactoryMethod;
+using Padroes.Patterns.Creational.Prototype;
+using Padroes.Patterns.Creational.Singleton;
+using Padroes.Patterns.NotGof.FluentInterface;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -111,6 +114,21 @@ namespace Padroes
         private void button16_Click(object sender, EventArgs e)
         {
             TestFactoryMethod.Testar();
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            TestPrototype.Testar();
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            TestSingleton.Testar();
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            TestFluentInterface.Testar();
         }
     }
 }
